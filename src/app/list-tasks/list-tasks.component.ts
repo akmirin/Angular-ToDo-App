@@ -30,7 +30,9 @@ export class ListTasksComponent implements OnInit {
   initialIndex;
   userList: list[];
 
-  constructor(private listService: ListServiceService, private route:ActivatedRoute, private userService: UserServiceService){
+  constructor(public listService: ListServiceService,
+              public route:ActivatedRoute,
+              public userService: UserServiceService){
   }
 
   removeFromList(item): void{

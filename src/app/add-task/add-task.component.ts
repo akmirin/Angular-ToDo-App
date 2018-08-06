@@ -9,7 +9,14 @@ export class AddTaskComponent implements OnInit {
 
   constructor() { }
 
+  listBody:string="";
+  listContent:string="";
+  
   ngOnInit() {
+  }
+
+  public addItemToList(){
+    console.log("add to list login pending");
   }
 
 }
